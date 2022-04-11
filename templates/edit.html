@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  body {
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjwGvJs7EXM7CqrEGt6J6Yts2sChRQZSP4A&usqp=CAU');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-size: 100% 100%;
+}
+</style>
+
+<h1>Edit Books </h1>
+<div class="container container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+      <form action="" method="post">
+        <table class="table table-borderless">
+          <tr>
+            <td>Book Name</td>
+            <td><input name="newname" class = "form-control" type="text"> </td>
+          </tr>
+
+          <tr>
+            <td>Author</td>
+            <td><input name="newauthor" class = "form-control" type="text"> </td>
+          </tr>
+
+          <tr>
+            <td>Category</td>
+            <td><input name="newcat" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td><input name="newprice" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>Publisher</td>
+            <td><input name="newpub" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td><button  class="btn btn-success"type = "submit" >Confirm Changes</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
